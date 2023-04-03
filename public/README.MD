@@ -1,11 +1,12 @@
 # TWEETER 
 
-A single page AJAX based twitter clone that uses JQuery, HTML 5, CSS3, and JavaScript.
+A single page AJAX based twitter clone that uses JQuery, HTML 5, CSS 3, and JavaScript.
 
 ## Final Product
 
-!["URL HOMEPAGE](#)
-!["RESPONSIVE DESIGN](#)
+!["URL HOMEPAGE](https://raw.githubusercontent.com/RorySchof/tweeter/677e7b1987266e73a5f64642597e49a104b92c2d/docs/HOMEPAGE-%20FULL%20SCREEN.png)
+
+!["RESPONSIVE DESIGN](https://raw.githubusercontent.com/RorySchof/tweeter/677e7b1987266e73a5f64642597e49a104b92c2d/docs/MOBILE%20RESPONSIVE%20VERSION.png)
 
 ## Dependencies
 
