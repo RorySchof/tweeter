@@ -6,20 +6,67 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /*
- * Global layout stuff
+ * GLOBAL LAYOUT
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
+  color: #000000;
+  background-color: #ffffff;
   font-size: 24px;
+  font-family: "source sans pro", sans-serif;
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
+ADDITIONAL CSS DEFINED BELOW
  */
+
+main {
+  width: 90%;
+  margin: auto;
+  background-color: #f4f1ec;
+}
+
+.tweets-container {
+  margin: 10px;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-container {
+  display: flex;
+  top: 130px;
+  position: relative;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .body-container {
+    display: block;
+  }
+
+  nav {
+    background-color: #f7ce00;
+    background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
+  }
+
+  .header {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.error-message {
+  font-size: 44;
+  display: flex;
+}

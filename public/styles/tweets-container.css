@@ -1,0 +1,31 @@
+.tweet {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet:hover {
+  box-shadow: 0 0 5px black;
+}
+
+.icon-3:hover {
+  color: red;
+}
+
+.icon-1:hover {
+  color: green;
+}
+
+.icon-2:hover {
+  color: blue;
+}

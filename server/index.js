@@ -23,7 +23,7 @@ const db = require("./lib/in-memory-db");
 const DataHelpers = require("./lib/data-helpers.js")(db);
 
 // Update the dates for the initial tweets (data-files/initial-tweets.json).
-require("./lib/date-adjust")();
+require("./lib/date-adjust")(DataHelpers);
 
 // The `tweets-routes` module works similarly: we pass it the `DataHelpers` object
 // so it can define routes that use it to interact with the data layer.
@@ -31,6 +31,16 @@ const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 
 // Mount the tweets routes at the "/tweets" path prefix:
 app.use("/tweets", tweetsRoutes);
+
+//ADDED EVENT LISTENER FOR SUBMIT AND PREVENT DEFAULT BEHAVIOUR. 
+
+/*
+$(function() {
+  $('form').submit(function(event) {
+    event.preventDefault();
+  });
+});
+*/
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);

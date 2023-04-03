@@ -1,0 +1,23 @@
+nav {
+  height: 150px;
+  width: 100%;
+  background-color: #4056A1;
+  font-family: Bungee, sans-serif;
+  padding: 0 1.5em;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  top: 0;
+}
+
+nav span {
+  font-family: Bungee, sans-serif;
+}
+
+.write-tweet {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
