@@ -8,6 +8,8 @@ $(document).ready(function () {
   const $error = $('#error-message');
 
   const renderTweets = function (tweets) {
+    $('.tweets-container').empty();
+
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('.tweets-container').prepend($tweet);
